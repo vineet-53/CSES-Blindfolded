@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBullseye } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Notice() {
   const [see, setSee] = useState(false);
@@ -23,6 +24,17 @@ export default function Notice() {
           Link in <span className="text-blue-300">Color</span> are Visited
           Links.
         </p>
+        <div className="mt-2">
+          <h3 className="text-2xl ">Reason to Create this website...</h3>
+          <Link
+            to={
+              "https://github.com/vineet-53/CSES-ProblemSet/blob/main/README.md"
+            }
+            className="text-green-500 underline"
+          >
+            Link to readme
+          </Link>
+        </div>
       </div>
     );
   }
