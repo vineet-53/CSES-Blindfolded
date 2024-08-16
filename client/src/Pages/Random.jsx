@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { links } from "../data/links.json";
+import { FaFileAlt } from "react-icons/fa";
 export default function Random() {
   const [generated, setGenerated] = useState(false);
   const [link, setLink] = useState(null);
@@ -16,14 +17,17 @@ export default function Random() {
     handleGenerate();
   }, []);
   return (
-    <div className="h-screen flex flex-col gap-10 justify-center items-center bg-black w-full">
+    <div className="h-screen flex flex-col gap-10 py-10 px-8 bg-black w-full">
       {generated && link && (
-        <a
-          className="visited:text-blue-400 underline text-5xl text-bold text-gray-600"
-          href={`https://cses.fi/${link}`}
-        >
-          {`https://cses.fi/${link}`}
-        </a>
+        <div className="flex gap-3 items-center ">
+          <FaFileAlt size={50} className="text-gray-200" />
+          <a
+            className="visited:text-blue-300 underline text-3xl text-bold text-green-500"
+            href={`https://cses.fi/${link}`}
+          >
+            {`https://cses.fi/${link}`}
+          </a>
+        </div>
       )}
     </div>
   );
