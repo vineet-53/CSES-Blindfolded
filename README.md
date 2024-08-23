@@ -1,4 +1,4 @@
-# CSES Problem Set [Live Preview](https://cses-problem-set-vineet-53.vercel.app/)
+# CSES Blindfolded [Live Preview](https://cses-problem-set-vineet-53.vercel.app/)
 
 # Purpose of this Website
 
